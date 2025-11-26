@@ -1,0 +1,226 @@
+/* paleta de colores */
+:root {
+    --fondoNavbar: #f4f4f4;
+    --bordesTarjetas: #cdcccd;
+    --botonesAcentos: #fe9901;
+    --texto: #000;
+    --fondoComida: #f9ca9d;
+    --textoBlancoFondos: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* propiedades de navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom-style: solid;
+    background-color: var(--fondoNavbar);
+    border-bottom-color: var(--bordesTarjetas);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo h1 span {
+    color: var(--botonesAcentos);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right form {
+    display: flex;
+}
+
+.right form input {
+    border-color: var(--bordesTarjetas);
+    border-style: solid;
+    padding: 8px;
+    width: 200px;
+}
+
+.right form button {
+    background-color: var(--botonesAcentos);
+    border: none;
+    width: 120px;
+    color: var(--texto);
+    font-weight: bold;
+}
+
+.right form button:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: var(--fondoComida);
+    box-shadow: 2px 4px 6px #8150073f;
+}
+
+.right form button:active {
+    transform: scale(0.97);
+}
+
+.right .carrito {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right .carrito img {
+    width: 25px;
+}
+
+/* propiedades contenido principal */
+main {
+    width: 1300px;
+    margin: 20px auto;
+}
+
+/* propiedades menú de comida */
+.menu-comida {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: var(--fondoComida);
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--textoBlancoFondos);
+    font-weight: bold;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* propiedades "contenido principal" */
+.principal {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* propiedades publicidad */
+.publicidad {
+    background-color: var(--bordesTarjetas);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex: 2;
+    height: 500px;
+}
+
+.publicidad div {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.publicidad p:first-child {
+    font-size: 25px;
+
+}
+
+.publicidad p:first-child span {
+    font-weight: bold;
+}
+
+.publicidad p:last-child {
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.publicidad p:last-child span {
+    color: var(--botonesAcentos);
+    font-weight: bold;
+}
+
+
+.publicidad img {
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* propiedades de recomendados */
+.recomendados {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recomendados>p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-recomendados {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--bordesTarjetas);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-recomendados img {
+    width: 100%;
+    display: block;
+}
+
+.add-order {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-order button {
+    background-color: var(--botonesAcentos);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--textoBlancoFondos);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-order button:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: var(--fondoComida);
+    box-shadow: 2px 4px 6px #8150073f;
+}
+
+.add-order button:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- autor -->
+    <meta name="Karolay Alucema" content="alucemakarolay@gmail.com">
+    <!-- icono y nombre página -->
+    <link rel="icon" type="image/png" href="static/images/logo.png">
+    <title>Taco Palace</title>
+    <!-- conexión css -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- conexión google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- encabezado -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="static/images/logo.png" alt="Logo">
+            <h1><span>Taco</span>Palace</h1>
+        </div>
+        <!-- agrupando lo del lado derecho del encabezado para luego aplicar flex -->
+        <div class="right">
+            <form class="contenido-email" action="#" method="post">
+                <input id="email" type="email" placeholder="Correo electrónico">
+                <button onclick="nombreEmail(this)" type="button">Iniciar sesión</button>
+            </form>
+            <div class="carrito">
+                <img src="static/images/carrito.png" alt="carrito">
+                <p id="contador">0</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contenido principal -->
+    <main>
+        <!-- menú de opciones de comida -->
+        <section class="menu-comida">
+            <div class="card">
+                <img src="static/images/enchiladas.jpg" alt="Enchiladas">
+                <p>Enchiladas</p>
+            </div>
+            <div class="card">
+                <img src="static/images/tacos.jpg" alt="Tacos">
+                <p>Tacos</p>
+            </div>
+            <div class="card">
+                <img src="static/images/flautas.jpg" alt="Flautas">
+                <p>Flautas</p>
+            </div>
+            <div class="card">
+                <img src="static/images/gorditas.jpg" alt="Gorditas">
+                <p>Gorditas</p>
+            </div>
+            <div class="card">
+                <img src="static/images/tostadas.jpg" alt="Tostadas">
+                <p>Tostadas</p>
+            </div>
+            <div class="card">
+                <img src="static/images/enfrijoladas.jpg" alt="Enfrijoladas">
+                <p>Enfrijoladas</p>
+            </div>
+        </section>
+
+        <!-- sección "principal" de la página -->
+        <aside class="principal">
+            <!-- espacio de publicidad de comida -->
+            <div class="publicidad">
+                <div>
+                    <p>La mejor variedad en platillos de comida <span>mexicana</span></p>
+                    <p>Contamos con <a href="#">servicio</a> a <span>domicilio</span></p>
+                </div>
+                <img id="imagen-cambiar" src="static/images/comida-mexicana-01.jpg" alt="Comida Mexicana">
+            </div>
+            <!-- espacio de recomendados -->
+            <div class="recomendados">
+                <p>Recomendados</p>
+                <!-- cards de recomendados -->
+                <div class="card-recomendados">
+                    <img src="static/images/orden-tacos.jpg" alt="Orden de tacos">
+                    <div class="add-order">
+                        <div>
+                            <p class="nombre-orden">Orden de tacos</p>
+                            <a href="#">Ver Más...</a>
+                        </div>
+                        <div>
+                            <button class="boton-add-order" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-recomendados">
+                    <img src="static/images/orden-flautas.jpg" alt="Orden de flautas">
+                    <div class="add-order">
+                        <div>
+                            <p class="nombre-orden">Orden de flautas</p>
+                            <a href="#">Ver Más...</a>
+                        </div>
+                        <div>
+                            <button class="boton-add-order" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!-- conexión script -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
