@@ -27,9 +27,9 @@
         </div>
         <!-- agrupando lo del lado derecho del encabezado para luego aplicar flex -->
         <div class="right">
-            <form class="contenido-email" action="#" method="post">
+            <form class="contenido-email" action="#" onsubmit="return nombreEmail(this)">
                 <input id="email" type="email" placeholder="Correo electrónico">
-                <button onclick="nombreEmail(this)" type="button">Iniciar sesión</button>
+                <button type="submit">Iniciar sesión</button>
             </form>
             <div class="carrito">
                 <img src="static/images/carrito.png" alt="carrito">
