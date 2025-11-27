@@ -27,8 +27,9 @@
         </div>
         <!-- agrupando lo del lado derecho del encabezado para luego aplicar flex -->
         <div class="right">
-            <form class="contenido-email" action="#" onsubmit="return nombreEmail(this)">
-                <input id="email" type="email" placeholder="Correo electrónico">
+            <!-- event.preventDefault() hace que no se recargue la página al enviar el formulario -->
+            <form class="contenido-email" action="#" onsubmit="event.preventDefault(); nombreEmail(this)">
+                <input id="email" type="email" placeholder="Correo electrónico" required>
                 <button type="submit">Iniciar sesión</button>
             </form>
             <div class="carrito">
